@@ -10,7 +10,9 @@
   --text-color: #000;
 }
 
-body {
+body,
+html {
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif !important;
   background-color: var(--primary-color);
 }
@@ -248,11 +250,11 @@ a {
   background-color: #c24303;
 }
 .blog-card {
+  max-width: 650px;
   padding: 25px;
-  height: 680px;
   background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
   border-radius: 15px;
-  margin-block: 15px;
+  margin: 30px auto;
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -263,7 +265,6 @@ a {
 }
 .blog-img {
   max-width: 600px;
-  height: 400px;
   border-radius: 15px;
 }
 .blog-img > img {
@@ -284,17 +285,19 @@ a {
   margin-bottom: 20px;
 }
 .blog-card > p {
+  height: 110px;
   letter-spacing: 2px;
-  font-size: 14px;
 }
 /* Footer Section */
 .ftr-sec {
   background-color: var(--footer-bg);
   padding: 50px 0;
 }
-.ftr-logo > a {
+.ftr-logo {
   width: 210px;
-  margin-bottom: 60px;
+}
+.ftr-logo > a {
+  width: 100%;
 }
 .ftr-logo > a > img {
   width: 100%;
@@ -331,6 +334,9 @@ a {
 .ftr-list > ul > li > a > i:hover {
   color: var(--hover-color);
 }
+.scl-list > ul > li > a {
+  font-size: 1.8rem;
+}
 .footer-btm {
   padding: 40px 0 0;
   border-top: 1px solid #444;
@@ -363,12 +369,57 @@ a {
     margin-left: 0;
   }
 }
+@media screen and (max-width: 768px) {
+  /* Blog Section */
+  .blog-btn {
+    margin-right: 6px;
+    padding: 8px 13px;
+    border-radius: 12px;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+}
 @media screen and (max-width: 576px) {
+  .btn-primary {
+    font-size: 12px;
+    padding: 10px;
+  }
+  /* Blog Section */
+  .blog-card {
+    padding: 10px;
+    margin-block: 20px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    border-radius: 9px;
+  }
+  .blog-img > img {
+    border-radius: 9px;
+  }
+  .badge {
+    padding: 6px 10px;
+    margin-bottom: 12px;
+  }
+  .blog-card > p {
+    height: 84px;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
   /* Ftr-sec */
-  .ftr-logo,
-  .ftr-list,
-  .ftr-list > ul > li {
+  .ftr-logo {
+    margin: 0 auto 70px !important;
+  }
+  .ftr-list {
     text-align: center;
+    margin: 0 auto;
+  }
+
+  .ftr-list > ul > li {
+    text-align: left;
     margin: 0 auto 70px;
+  }
+  .scl-list {
+    margin-top: 30px;
+  }
+  .scl-list > ul > li > a {
+    font-size: 2rem;
   }
 }

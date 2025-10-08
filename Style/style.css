@@ -842,10 +842,7 @@ a {
   .img-bg {
     margin: 0 auto 10px;
   }
-  /* Blog Section
-  .blog-card {
-    
-    height: 600px;} */
+  
 }
 @media screen and (max-width: 992px) {
   .btn-primary {
