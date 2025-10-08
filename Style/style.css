@@ -618,7 +618,7 @@ a {
 .blog-card {
   max-width: 650px;
   padding: 25px;
-  /* height: 680px; */
+
   background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
   border-radius: 15px;
   margin: 30px auto;
@@ -1040,10 +1040,12 @@ a {
   }
   /* Blog Section */
   .blog-card {
-    padding: 12px;
-    height: 410px;
+    padding: 10px;
     margin-block: 20px;
     background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    border-radius: 9px;
+  }
+  .blog-img > img {
     border-radius: 9px;
   }
   .badge {
@@ -1114,6 +1116,7 @@ a {
   }
   .ftr-list {
     text-align: center;
+    margin: 0 auto;
   }
 
   .ftr-list > ul > li {
