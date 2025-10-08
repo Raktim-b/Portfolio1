@@ -245,8 +245,7 @@ a {
   overflow: hidden;
   border-right: 0.15em solid var(--hover-color);
   animation: typeAndDelete 7s steps(30) infinite;
-
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
 @keyframes typeAndDelete {
@@ -491,8 +490,10 @@ a {
   letter-spacing: 3px;
 }
 .card {
-  background-color: var(--Card-bg);
-  padding: 30px 18px 0;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  border: 4px solid #333;
+  color: var(--tertiary-color);
+  padding: 18px 18px 0;
   border-radius: 14px;
   max-width: 330px;
   height: 346px;
@@ -500,13 +501,14 @@ a {
 }
 .card:hover {
   transform: translateY(-5px);
+  border: 4px solid var(--secondary-color);
 }
 .card-icon > img {
   width: 80px;
   height: 80px;
 }
 .card > p {
-  color: var(--text-color);
+  color: var(--tertiary-color);
   letter-spacing: 1px;
   font-size: 14px;
 }
@@ -515,7 +517,7 @@ a {
 }
 /* Other Skill Section */
 .other-skill-sec {
-  padding: 40px 0;
+  padding: 20px 0 30px;
 }
 .other-skill-hdr {
   text-align: center;
@@ -571,8 +573,9 @@ a {
 }
 .prjct-cntn {
   max-width: 300px;
-  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
 
+  height: 687px;
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
   border: 4px solid #333;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
@@ -595,9 +598,7 @@ a {
   font-weight: bold;
   letter-spacing: 2px;
 }
-.prjct-desc > p {
-  height: 96px;
-}
+
 .used-skill {
   display: inline-block;
   color: var(--secondary-color);
@@ -615,11 +616,12 @@ a {
   margin-block: 20px;
 }
 .blog-card {
+  max-width: 650px;
   padding: 25px;
-  height: 680px;
+  /* height: 680px; */
   background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
   border-radius: 15px;
-  margin-block: 30px;
+  margin: 30px auto;
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -650,9 +652,8 @@ a {
   margin-bottom: 20px;
 }
 .blog-card > p {
-  height: 84px;
+  height: 110px;
   letter-spacing: 2px;
-  font-size: 14px;
 }
 /* Q&A Section */
 .qna-sec {
@@ -770,9 +771,11 @@ a {
   background-color: var(--footer-bg);
   padding: 50px 0;
 }
-.ftr-logo > a {
+.ftr-logo {
   width: 210px;
-  margin-bottom: 60px;
+}
+.ftr-logo > a {
+  width: 100%;
 }
 .ftr-logo > a > img {
   width: 100%;
@@ -836,6 +839,10 @@ a {
   .img-bg {
     margin: 0 auto 10px;
   }
+  /* Blog Section
+  .blog-card {
+    
+    height: 600px;} */
 }
 @media screen and (max-width: 992px) {
   .btn-primary {
@@ -924,6 +931,9 @@ a {
   .project-wrpr {
     margin-block: 40px;
   }
+  .filter-btn-container {
+    margin-block: 20px 30px;
+  }
   .fltr-btn {
     margin-right: 6px;
     padding: 8px 13px;
@@ -938,17 +948,38 @@ a {
   .tog-hdr > p {
     font-size: 14px;
   }
+  .qna-hdr > p {
+    padding-bottom: 20px !important;
+  }
   #email-input {
     font-size: 12px;
     margin-bottom: 30px;
   }
+  /* Together Section */
+  #fname-input {
+    margin-bottom: 20px;
+  }
+  #email-input,
+  #fname-input,
+  #lname-input,
+  #text-input {
+    font-size: 14px !important;
+  }
 }
 @media screen and (max-width: 576px) {
+  .btn-primary {
+    font-size: 12px;
+    padding: 10px;
+  }
   .title1 {
     font-size: 30px;
   }
   .title2 {
     font-size: 28px;
+  }
+  /* Header Section */
+  .navbar-brand {
+    width: 150px;
   }
   /* Banner Section */
   .line1 {
@@ -956,6 +987,7 @@ a {
   }
   .line2 {
     font-size: 20px;
+    margin-top: 0.5em;
   }
   .title1 > span {
     margin-left: 100px;
@@ -965,6 +997,20 @@ a {
   }
   .banner-btn > .btn-primary {
     padding: 12px 21px;
+  }
+  @keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 12em;
+    }
+    90%,
+    100% {
+      width: 0;
+    }
   }
   /* About Section */
   .about-cntn > p {
@@ -988,20 +1034,90 @@ a {
   .project-sec {
     padding: 10px 0;
   }
+
   .project-hdr > p {
     font-size: 12px;
   }
+  /* Blog Section */
+  .blog-card {
+    padding: 12px;
+    height: 410px;
+    margin-block: 20px;
+    background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+    border-radius: 9px;
+  }
+  .badge {
+    padding: 6px 10px;
+    margin-bottom: 12px;
+  }
+  .blog-card > p {
+    height: 84px;
+    letter-spacing: 2px;
+    font-size: 10px;
+  }
   /* Qna Section */
-  .tog-hdr > p {
+
+  .qna-hdr > p {
     font-size: 12px;
   }
-  /* Ftr-sec */
-  .ftr-logo > a {
-    margin: 0 auto 70px;
+
+  .accordion-button {
+    font-size: 16px;
   }
-  .ftr-list,
+  .accordion-body {
+    font-size: 12px;
+    padding: 14px 16px !important;
+    line-height: 20px;
+  }
+  /* Togather Section */
+  .tog-sec {
+    padding: 45px 0 50px;
+  }
+  .tog-hdr > p {
+    font-size: 12px;
+    margin-block: 15px;
+  }
+  .mt-5 {
+    margin-top: 2rem !important;
+  }
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+  .input-form {
+    padding: 16px 12px 40px;
+  }
+  .form-hdr {
+    font-size: 28px;
+  }
+
+  #fname-input {
+    margin-bottom: 15px;
+  }
+  #email-input {
+    margin-block: 15px;
+  }
+  #email-input,
+  #fname-input,
+  #lname-input,
+  #text-input {
+    font-size: 12px !important;
+    padding: 7px 12px !important;
+  }
+  #text-input {
+    height: 100px;
+    margin-bottom: 15px;
+  }
+
+  /* Footer Section */
+  .ftr-logo {
+    margin: 0 auto 70px !important;
+  }
+  .ftr-list {
+    text-align: center;
+  }
+
   .ftr-list > ul > li {
-    /* text-align: center; */
+    text-align: left;
     margin: 0 auto 70px;
   }
 }
