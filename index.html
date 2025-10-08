@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!-- Custome CSS -->
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="hdr-sec" id="hdr-part">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-logo">
+            <a class="navbar-brand" href="index.html"
+              ><img src="./Assets/Logo.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler border border-white"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars navbar-toggler-icon text-white mt-2"></i>
+          </button>
+          <div class="offcanvas offcanvas-end" id="navbarNavDropdown">
+            <button
+              class="offcanvas-header me-auto"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-hover active-nav text-white"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover text-white" href="#about"
+                  >About Me</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover text-white" href="#project"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-hover text-white" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Find Me
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item insta" href="#"
+                      ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item linkedin" href="#"
+                      ><i class="fa-brands fa-square-linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item github" href="#"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item facebook" href="#"
+                      ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="navbar-btn ms-3">
+              <a
+                href="./Assets/Raktim_resume.pdf"
+                class="btn-primary text-white border-0"
+                download="Raktim_resume.pdf"
+                aria-level="Raktim_resume.pdf"
+                >Downlaod CV <i class="bi bi-download"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section class="banner-sec">
+        <div class="container">
+          <div class="row banner-row">
+            <div class="col-12 col-xl-7">
+              <div class="banner-cntn">
+                <div class="line1 fw-semibold">Hi, I am</div>
+                <div class="line2 fw-semibold">Raktim Bhattacharya</div>
+                <h1 class="h1 title1 text-white fw-bold">
+                  Frontend <span>Developer</span>
+                </h1>
+                <p>
+                  Passionate Front-End Developer crafting responsive,
+                  user-friendly, and visually engaging web experiences. I
+                  specialize in turning ideas into interactive designs using
+                  modern web technologies. Always eager to learn and bring
+                  creative solutions to life.
+                </p>
+                <div class="banner-btn">
+                  <a href="" class="btn-primary text-white border-0"
+                    >Hire Me
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-5">
+              <div class="img-bg">
+                <figure class="banner-img">
+                  <img src="./Assets/Banner-img.png" alt="" />
+                </figure>
+              </div>
+              <div class="social-buttons">
+                <a href="#" class="social-button github2">
+                  <svg
+                    class="cf-icon-svg"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="-2.5 0 19 19"
+                  >
+                    <path
+                      d="M9.464 17.178a4.506 4.506 0 0 1-2.013.317 4.29 4.29 0 0 1-2.007-.317.746.746 0 0 1-.277-.587c0-.22-.008-.798-.012-1.567-2.564.557-3.105-1.236-3.105-1.236a2.44 2.44 0 0 0-1.024-1.348c-.836-.572.063-.56.063-.56a1.937 1.937 0 0 1 1.412.95 1.962 1.962 0 0 0 2.682.765 1.971 1.971 0 0 1 .586-1.233c-2.046-.232-4.198-1.023-4.198-4.554a3.566 3.566 0 0 1 .948-2.474 3.313 3.313 0 0 1 .091-2.438s.773-.248 2.534.945a8.727 8.727 0 0 1 4.615 0c1.76-1.193 2.532-.945 2.532-.945a3.31 3.31 0 0 1 .092 2.438 3.562 3.562 0 0 1 .947 2.474c0 3.54-2.155 4.32-4.208 4.548a2.195 2.195 0 0 1 .625 1.706c0 1.232-.011 2.227-.011 2.529a.694.694 0 0 1-.272.587z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" class="social-button linkedin2">
+                  <svg
+                    viewBox="0 -2 44 44"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g id="Icons" stroke="none" stroke-width="1">
+                      <g transform="translate(-702.000000, -265.000000)">
+                        <path
+                          d="M746,305 L736.2754,305 L736.2754,290.9384 C736.2754,287.257796 734.754233,284.74515 731.409219,284.74515 C728.850659,284.74515 727.427799,286.440738 726.765522,288.074854 C726.517168,288.661395 726.555974,289.478453 726.555974,290.295511 L726.555974,305 L716.921919,305 C716.921919,305 717.046096,280.091247 716.921919,277.827047 L726.555974,277.827047 L726.555974,282.091631 C727.125118,280.226996 730.203669,277.565794 735.116416,277.565794 C741.21143,277.565794 746,281.474355 746,289.890824 L746,305 L746,305 Z M707.17921,274.428187 L707.117121,274.428187 C704.0127,274.428187 702,272.350964 702,269.717936 C702,267.033681 704.072201,265 707.238711,265 C710.402634,265 712.348071,267.028559 712.41016,269.710252 C712.41016,272.34328 710.402634,274.428187 707.17921,274.428187 L707.17921,274.428187 L707.17921,274.428187 Z M703.109831,277.827047 L711.685795,277.827047 L711.685795,305 L703.109831,305 L703.109831,277.827047 L703.109831,277.827047 Z"
+                          id="LinkedIn"
+                        ></path>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+                <a href="#" class="social-button facebook2">
+                  <svg
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 310 310"
+                    xml:space="preserve"
+                  >
+                    <g id="XMLID_834_">
+                      <path
+                        id="XMLID_835_"
+                        d="M81.703,165.106h33.981V305c0,2.762,2.238,5,5,5h57.616c2.762,0,5-2.238,5-5V165.765h39.064
+    c2.54,0,4.677-1.906,4.967-4.429l5.933-51.502c0.163-1.417-0.286-2.836-1.234-3.899c-0.949-1.064-2.307-1.673-3.732-1.673h-44.996
+    V71.978c0-9.732,5.24-14.667,15.576-14.667c1.473,0,29.42,0,29.42,0c2.762,0,5-2.239,5-5V5.037c0-2.762-2.238-5-5-5h-40.545
+    C187.467,0.023,186.832,0,185.896,0c-7.035,0-31.488,1.381-50.804,19.151c-21.402,19.692-18.427,43.27-17.716,47.358v37.752H81.703
+    c-2.762,0-5,2.238-5,5v50.844C76.703,162.867,78.941,165.106,81.703,165.106z"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+                <a href="#" class="social-button instagram2">
+                  <svg
+                    width="800px"
+                    height="800px"
+                    viewBox="0 0 20 20"
+                    version="1.1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                  >
+                    <g id="Page-1" stroke="none" stroke-width="1">
+                      <g
+                        id="Dribbble-Light-Preview"
+                        transform="translate(-340.000000, -7439.000000)"
+                      >
+                        <g
+                          id="icons"
+                          transform="translate(56.000000, 160.000000)"
+                        >
+                          <path
+                            d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                            id="instagram-[#167]"
+                          ></path>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- About Section -->
+      <section class="about-sec" id="about">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-xl-5">
+              <div class="img-bg" data-aos="fade-right" data-aos-duration="500">
+                <figure class="about-img">
+                  <img src="./Assets/About-img.png" alt="" />
+                </figure>
+              </div>
+            </div>
+            <div class="col-12 col-xl-7">
+              <div class="about-cntn">
+                <h2 class="title2 fw-semibold text-white" data-aos="fade-left">
+                  About Me
+                </h2>
+                <p
+                  class="text-white"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  Hi, I’m a frontend developer who loves turning ideas into
+                  interactive and visually appealing websites. I work with HTML,
+                  CSS, JavaScript, Bootstrap, and Tailwind CSS to build modern,
+                  responsive designs. Right now, I’m focusing on growing my
+                  skills and will soon be exploring React to take my projects to
+                  the next level. For me, coding isn’t just about writing
+                  code—it’s about creating smooth, enjoyable experiences for
+                  users.
+                </p>
+                <div
+                  class="about-prg"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="skill-item">
+                    <div class="skill-label">HTML</div>
+                    <div class="progress-container">
+                      <div class="progress-bar html-progress"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-label">CSS</div>
+                    <div class="progress-container">
+                      <div class="progress-bar css-progress"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-label">JavaScript</div>
+                    <div class="progress-container">
+                      <div class="progress-bar js-progress"></div>
+                    </div>
+                  </div>
+
+                  <div class="skill-item">
+                    <div class="skill-label">Bootstrap</div>
+                    <div class="progress-container">
+                      <div class="progress-bar bootstrap-progress"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Section -->
+      <section class="service-sec">
+        <div class="container">
+          <div class="service-hdr" data-aos="zoom-in">
+            <h2 class="title2 text-white fw-semibold">Services</h2>
+            <p class="text-white">
+              I provide frontend development services including responsive web
+              design, clean UI development, and interactive features using HTML,
+              CSS, JavaScript, Bootstrap, and Tailwind CSS. My goal is to create
+              websites that look great, work seamlessly, and deliver value.
+            </p>
+          </div>
+          <div class="card-wrpr">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+                      alt="JavaScript"
+                    />
+                  </div>
+                  <h3 class="title3">JavaScript</h3>
+                  <p>
+                    JavaScript powers interactivity in my projects. I build
+                    dynamic features and smooth functionality to enhance the
+                    overall user experience.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img
+                      src="https://www.w3.org/html/logo/downloads/HTML5_Badge.svg"
+                      alt="HTML5 Logo"
+                    />
+                  </div>
+                  <h3 class="title3">HTML5</h3>
+                  <p>
+                    I use HTML to structure clean, semantic webpages that form
+                    the foundation of every project. It helps me ensure
+                    accessibility and SEO-friendly layouts.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                      alt="CSS3"
+                    />
+                  </div>
+                  <h3 class="title3">CSS3</h3>
+                  <p>
+                    With CSS I design responsive, visually engaging interfaces.
+                    From flexbox to animations, I craft styles that make
+                    websites both attractive and user-friendly.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img
+                      src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg"
+                      alt="Bootstrap"
+                    />
+                  </div>
+                  <h3 class="title3">Bootstrap</h3>
+                  <p>
+                    I use Bootstrap to accelerate development with responsive
+                    grids and ready-made components. It allows me to prototype
+                    and deliver polished designs faster.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Other Skills Section-->
+      <section class="other-skill-sec">
+        <div class="container">
+          <div class="other-skill-hdr" data-aos="zoom-in">
+            <h2 class="title2 text-white fw-semibold">Other Skills</h2>
+            <p class="text-white">
+              Alongside frontend development, I also have a background in core
+              programming and databases. With experience in C, Java, Python, and
+              MySQL, I can approach problems logically, write efficient code,
+              and work with structured data to build reliable solutions.
+            </p>
+          </div>
+          <div class="other-skills-wrpr">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img src="./Assets/C-programming.jpg" />
+                  </div>
+                  <h3 class="title3">C Programming</h3>
+                  <p>
+                    C gave me a strong base in programming, teaching me how
+                    software runs close to the hardware. It improved my
+                    logic-building and problem-solving skills.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img
+                      src="https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/java.svg"
+                    />
+                  </div>
+                  <h3 class="title3">Java</h3>
+                  <p>
+                    Java helps me write structured, object-oriented code. It’s
+                    great for building reliable solutions that can scale and run
+                    across platforms.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                    />
+                  </div>
+                  <h3 class="title3">Python</h3>
+                  <p>
+                    Python makes coding simple and readable while being
+                    incredibly powerful. It’s perfect for rapid development,
+                    data analysis, automation, and building versatile
+                    applications across different domains.
+                  </p>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-xl-3">
+                <div
+                  class="card"
+                  data-aos="flip-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <div class="card-icon">
+                    <img src="./Assets/SQL.jpg" />
+                  </div>
+                  <h3 class="title3">MySQL</h3>
+                  <p>
+                    MySQL lets me manage and organize data efficiently. I work
+                    with queries and databases to ensure smooth and secure data
+                    handling.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Project Section -->
+      <section class="project-sec" id="project">
+        <div class="container">
+          <div class="project-hdr" data-aos="zoom-in">
+            <h2 class="title2 text-white fw-semibold">My Projects</h2>
+            <p class="text-white">
+              My projects showcase websites built with HTML, CSS, JavaScript,
+              and Bootstrap. They highlight responsive layouts, clean UI, and
+              smooth interactions. Each project reflects my focus on modern
+              design and user experience.
+            </p>
+          </div>
+          <div class="project-wrpr">
+            <div class="filter-btn-container">
+              <button class="fltr-btn active">All</button
+              ><button class="fltr-btn">e-Commerce</button
+              ><button class="fltr-btn">Fashion</button
+              ><button class="fltr-btn">Business</button>
+              <button class="fltr-btn">Medical</button>
+            </div>
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/Fashion1.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">Fashion</h4>
+                    <p>
+                      Shop.Co Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/e-Commarse1.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">e-Commerce</h4>
+                    <p>
+                      Cabinetmark LLC Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1100"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/Medical1.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">Medical</h4>
+                    <p>
+                      Lung+Allergy Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1400"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/Business2.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">Business</h4>
+                    <p>
+                      Miro Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/Fashion2.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">Fashion</h4>
+                    <p>
+                      NorthStar Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/e-Commarse2.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">e-Commerce</h4>
+                    <p>
+                      Furniture Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1100"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/Business1.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">Business</h4>
+                    <p>
+                      Everetts Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div
+                  class="prjct-cntn"
+                  data-aos="fade-left"
+                  data-aos-easing="linear"
+                  data-aos-duration="1400"
+                >
+                  <figure class="prjct-img">
+                    <img src="./Assets/Business3.jpg" alt="" />
+                  </figure>
+                  <div class="prjct-desc">
+                    <h4 class="title4">Business</h4>
+                    <p>
+                      Nex cent Landing Page Design Using:
+                      <span class="used-skill">
+                        HTML, CSS, Bootstrap, JQuery</span
+                      >
+                    </p>
+                    <a href="#hdr-part" class="btn-primary"
+                      >View Project <i class="bi bi-box-arrow-up-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section -->
+      <section class="blog-sec">
+        <div class="container">
+          <div class="blog-hdr text-center" data-aos="zoom-in">
+            <h2 class="title2 text-white">My Blog</h2>
+            <p class="text-white">
+              Insights, tutorials, and thoughts on web development, design
+              trends, and my journey as a frontend developer
+            </p>
+          </div>
+          <div class="blog-wrpr">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div
+                  class="blog-card"
+                  data-aos="fade-up-right"
+                  data-aos-easing="linear"
+                >
+                  <figure class="blog-img">
+                    <img src="./Assets/blog-img1.jpeg" alt="" />
+                  </figure>
+                  <span class="badge">FEATURED</span>
+                  <p class="text-white">
+                    Explore modern CSS techniques including Flexbox, Grid, and
+                    CSS custom properties to create beautiful, responsive
+                    layouts that work across all devices. Learn practical tips
+                    and best practices I use in my projects...
+                  </p>
+                  <a href="#" class="btn-primary">Read Full Article</a>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div
+                  class="blog-card"
+                  data-aos="fade-up-left"
+                  data-aos-duration="500"
+                >
+                  <figure class="blog-img">
+                    <img src="./Assets/Blog-img2.jpeg" alt="" />
+                  </figure>
+                  <span class="badge">JAVA SCRIPT</span>
+                  <p class="text-white">
+                    Discover essential JavaScript techniques that will make your
+                    code cleaner, more efficient, and easier to maintain.
+                  </p>
+                  <a href="#" class="btn-primary">Read Full Article</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog-btn text-center py-3">
+              <a href="blog.html" class="btn-primary"
+                >Veiw More <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Q&A Section -->
+      <section class="qna-sec">
+        <div class="container">
+          <div class="row qna-row">
+            <div class="col-12 col-md-6">
+              <div
+                class="qna-hdr"
+                data-aos="fade-right"
+                data-aos-duration="500"
+              >
+                <h2 class="title2 text-white fw-semibold">
+                  Frequently Asked Questions
+                </h2>
+                <p class="text-white">
+                  This section highlights the most common queries about my work.
+                  It gives you quick insights into my skills, process, and
+                  approach to web development.
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div
+                class="accordion"
+                id="accordionPanelsStayOpenExample"
+                data-aos="fade-left"
+                data-aos-duration="500"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseOne"
+                      aria-expanded="true"
+                      aria-controls="panelsStayOpen-collapseOne"
+                    >
+                      Q: What technologies do you specialize in?
+                      <i class="fa-regular fa-square-caret-down"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseOne"
+                    class="accordion-collapse collapse show"
+                  >
+                    <div class="accordion-body">
+                      A: I specialize in frontend development with HTML, CSS,
+                      JavaScript, Bootstrap, and Tailwind CSS. These tools allow
+                      me to build responsive layouts, structured designs, and
+                      engaging interactions. I make sure that every project I
+                      create follows modern web standards, is cross-browser
+                      compatible, and maintains clean, well-organized code. My
+                      goal is to combine creativity with technical skill so the
+                      websites I deliver are both visually appealing and highly
+                      functional.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseTwo"
+                    >
+                      Q: Do you create mobile-friendly websites?
+                      <i class="fa-regular fa-square-caret-down"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseTwo"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      A: Yes, responsiveness is a core part of my development
+                      process. I design websites that automatically adjust to
+                      different screen sizes and devices, whether it’s a large
+                      desktop, a laptop, a tablet, or a mobile phone. By using
+                      frameworks like Bootstrap and Tailwind CSS, I ensure that
+                      layouts remain consistent and user-friendly. I also test
+                      my websites across multiple devices to confirm that users
+                      enjoy a smooth browsing experience no matter how they
+                      access the site.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Q: Can you add interactive features to websites?
+                      <i class="fa-regular fa-square-caret-down"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      A: Absolutely. Interactivity plays a key role in keeping
+                      users engaged, and I use JavaScript to bring websites to
+                      life. This includes adding sliders, dropdowns, modals,
+                      form validations, smooth animations, and other custom
+                      features that make browsing more enjoyable. I believe that
+                      a website should not just be static—it should respond to
+                      user actions naturally, making navigation intuitive and
+                      the experience memorable.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Q: Do you plan to learn more technologies?
+                      <i class="fa-regular fa-square-caret-down"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      A: Yes, I strongly believe in continuous learning. The web
+                      development field is constantly evolving, and I am always
+                      working to expand my skill set. At present, I am preparing
+                      to dive deeper into React, which will allow me to build
+                      scalable, component-based applications with more advanced
+                      functionality. Over time, I also plan to explore backend
+                      technologies so I can become a more versatile full-stack
+                      developer.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#panelsStayOpen-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="panelsStayOpen-collapseThree"
+                    >
+                      Q: How can I contact you for a project?
+                      <i class="fa-regular fa-square-caret-down"></i>
+                    </button>
+                  </h2>
+                  <div
+                    id="panelsStayOpen-collapseThree"
+                    class="accordion-collapse collapse"
+                  >
+                    <div class="accordion-body">
+                      A: The easiest way to get in touch with me is through the
+                      contact section of this portfolio, where I’ve listed my
+                      email and social media profiles. I’m open to freelance
+                      projects, collaborations, and long-term opportunities. I
+                      value clear communication and always aim to respond
+                      quickly and professionally. Whether you have a specific
+                      idea in mind or just want to discuss possibilities, I’d be
+                      glad to connect and explore how we can work together.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Together Section -->
+      <section class="tog-sec">
+        <div class="container tog-container">
+          <div class="tog-hdr mb-5" data-aos="zoom-in">
+            <h2 class="title2 text-white fw-semibold">Lets Design Together</h2>
+            <p class="text-white">
+              I collaborate with clients to craft modern, responsive, and
+              user-friendly websites that bring ideas to life and deliver real
+              impact
+            </p>
+          </div>
+          <form action="" class="input-form mt-5">
+            <div class="form-hdr text-white text-center mb-4">
+              Sent a feedback
+            </div>
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6">
+                <input
+                  type="text"
+                  id="fname-input"
+                  placeholder="First name"
+                  aria-label="First name"
+                />
+              </div>
+              <div class="col-12 col-md-6">
+                <input
+                  type="text"
+                  id="lname-input"
+                  placeholder="Last name"
+                  aria-label="Last name"
+                />
+              </div>
+
+              <div class="col-12">
+                <input
+                  type="email"
+                  name=""
+                  id="email-input"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+
+              <div class="col-12">
+                <textarea
+                  name=""
+                  id="text-input"
+                  placeholder="Enter your Message"
+                ></textarea>
+              </div>
+              <div class="col-12 text-center">
+                <input
+                  type="submit"
+                  value="Contact Me "
+                  class="btn-primary input-btn text-white border-0"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="back-top-btn text-center mb-5">
+        <a href="#hdr-part" class="btn-primary"
+          >Back To Top <i class="fa-solid fa-angle-up"></i
+        ></a>
+      </div>
+    </main>
+    <!-- Footer Section -->
+    <footer class="ftr-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <figure class="ftr-logo">
+              <a href="index.html"
+                ><img src="./Assets/Footer-logo.png" alt=""
+              /></a>
+            </figure>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ftr-list contact-list">
+              <div class="ftr-list-hdr fw-bold mb-3">Contact Me</div>
+              <ul class="list-unstyled">
+                <li class="text-white d-flex align-items-center mb-3">
+                  <div class="contact-img-bg me-3">
+                    <img src="./Assets/Location.png" alt="" />
+                  </div>
+                  97/2 P.K. Guha Lane, Kol - 7000028
+                </li>
+                <li class="text-white d-flex align-items-center mb-3">
+                  <div class="contact-img-bg me-3">
+                    <img src="./Assets/Path.png" alt="" />
+                  </div>
+                  9875522183
+                </li>
+                <li class="text-white d-flex align-items-center mb-3">
+                  <div class="contact-img-bg me-3">
+                    <img src="./Assets/Envelope.png" alt="" />
+                  </div>
+                  <a href="" class="text-white gmail-link"
+                    >raktimb414@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="ftr-list scl-list">
+              <div class="ftr-list-hdr fw-bold mb-3">Social Links</div>
+              <ul class="list-unstyled d-flex">
+                <li class="text-white">
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+                <li class="text-white">
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-brands fa-square-linkedin"></i
+                  ></a>
+                </li>
+                <li class="text-white">
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li class="text-white">
+                  <a class="dropdown-item" href="#"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="ftr-btm-txt text-white text-center">
+            © 2025 All Rights Reserved , Inc.
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Aos Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- EmailJS Sdk -->
+
+    <!-- Custom Js -->
+    <script src="./Script/script.js"></script>
+  </body>
+</html>
