@@ -111,6 +111,49 @@ document.addEventListener("DOMContentLoaded", function () {
     console.log(emailInput.value);
   }
   formInput.addEventListener("submit", submitForm);
+  const backToTopBtn = document.getElementById("backToTop");
+
+  // Show button when user scrolls down 300px
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      backToTopBtn.classList.add("show");
+    } else {
+      backToTopBtn.classList.remove("show");
+    }
+  });
+
+  // Smooth scroll to top when button is clicked
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
+  const swiper = new Swiper(".swiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    slidesPerView: 1,
+
+    loop: true,
+    // freeMode: true,
+    breakpoints: {
+      // when window width is >= 576px
+      768: {
+        slidesPerView: 2,
+        // spaceBetween: 30,
+      },
+      // when window width is >= 992px
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
 });
 document
   .querySelector(".input-form")
