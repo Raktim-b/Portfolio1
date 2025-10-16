@@ -2,42 +2,81 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize AOS
   AOS.init();
+  const swiper = new Swiper(".swiper", {
+    centeredSlides: true,
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
+    },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    slidesPerView: 1,
 
-  // Get all filter buttons and project items
+    loop: true,
+    // freeMode: true,
+    breakpoints: {
+      // when window width is >= 576px
+      768: {
+        slidesPerView: 2,
+        // spaceBetween: 30,
+      },
+      // when window width is >= 992px
+      1200: {
+        slidesPerView: 3,
+      },
+    },
+  });
+
   const filterBtns = document.querySelectorAll(".fltr-btn");
-  const projects = document.querySelectorAll(".prjct-cntn");
+  const slides = document.querySelectorAll(".swiper-slide");
 
-  // Function to handle filter button click
+  function removeActiveClass(btn) {
+    btn.classList.remove("active");
+  }
+
   function handleFilterClick() {
-    // Remove active class from all buttons
+    // Remove active class from all filter buttons
     filterBtns.forEach(removeActiveClass);
-
-    // Add active class to clicked button
     this.classList.add("active");
 
-    // Get the filter category
-    const filterValue = this.textContent.trim();
-    console.log("Filter clicked:", filterValue);
+    // Get selected filter value
+    const filterValue = this.textContent.trim().toLowerCase();
 
-    // Filter projects
-    projects.forEach(function (project) {
-      const category = project.querySelector(".title4").textContent.trim();
+    // Loop through all slides
+    slides.forEach((slide) => {
+      const projectCategory = slide
+        .querySelector(".title4")
+        .textContent.trim()
+        .toLowerCase();
 
-      if (filterValue === "All") {
-        // Show all projects
-        project.parentElement.style.display = "block";
-      } else if (category === filterValue) {
-        // Show matching projects
-        project.parentElement.style.display = "block";
+      // Show or hide slide
+      if (filterValue === "all" || projectCategory === filterValue) {
+        slide.style.display = "block"; // show
       } else {
-        // Hide non-matching projects
-        project.parentElement.style.display = "none";
+        slide.style.display = "none"; // hide
       }
     });
 
-    // Refresh AOS to remove animation delays
-    AOS.refresh();
+    // Refresh Swiper layout after filtering
+    swiper.update();
   }
+
+  // Add event listeners to buttons
+  filterBtns.forEach((btn) => {
+    btn.addEventListener("click", handleFilterClick);
+  });
+
+  // Get all filter buttons and project items
+
+  // Refresh AOS to remove animation delays
+
+  // Filter for blog page
   const buttons = document.querySelectorAll(".blog-btn");
   const blogCards = document.querySelectorAll(".blog-card");
 
@@ -47,50 +86,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function blogFilterClick() {
     // Remove active class from all buttons
-    for (var i = 0; i < buttons.length; i++) {
-      removeActiveClass(buttons[i]);
-    }
+    buttons.forEach(removeActiveClass);
 
-    // Add active class to clicked button
+    // Add active class to the clicked button
     this.classList.add("active");
 
-    var blogFilterValue = this.textContent.trim().toLowerCase();
+    // Get clicked button text
+    const blogFilterValue = this.textContent.trim().toLowerCase();
 
-    for (var j = 0; j < blogCards.length; j++) {
-      var card = blogCards[j];
-      var blogCategory = card
+    // Loop through all cards
+    blogCards.forEach((card) => {
+      const blogCategory = card
         .querySelector(".badge")
         .textContent.trim()
         .toLowerCase();
 
-      if (blogFilterValue === "all posts") {
-        card.parentElement.style.display = "block";
-      } else if (blogCategory === blogFilterValue) {
+      // Show or hide cards based on the selected filter
+      if (
+        blogFilterValue === "all posts" ||
+        blogFilterValue === "all" ||
+        blogCategory.includes(blogFilterValue)
+      ) {
         card.parentElement.style.display = "block";
       } else {
         card.parentElement.style.display = "none";
       }
-    }
+    });
 
-    AOS.refresh(); // Refresh animations
+    // Refresh AOS animations after filtering
+    AOS.refresh();
   }
 
-  for (var k = 0; k < buttons.length; k++) {
-    buttons[k].addEventListener("click", blogFilterClick);
-  }
-
-  console.log("Event listeners attached successfully!");
-  // Function to remove active class
-  function removeActiveClass(button) {
-    button.classList.remove("active");
-  }
-
-  // Add click event to each filter button
-  filterBtns.forEach(function (btn) {
-    btn.addEventListener("click", handleFilterClick);
+  // Add event listeners
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", blogFilterClick);
   });
 
-  console.log("Event listeners attached successfully!");
   const formInput = document.querySelector(".input-form");
   const emailInput = document.getElementById("email-input");
   const re =
@@ -128,31 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
       top: 0,
       behavior: "smooth",
     });
-  });
-  const swiper = new Swiper(".swiper", {
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    slidesPerView: 1,
-
-    loop: true,
-    // freeMode: true,
-    breakpoints: {
-      // when window width is >= 576px
-      768: {
-        slidesPerView: 2,
-        // spaceBetween: 30,
-      },
-      // when window width is >= 992px
-      1200: {
-        slidesPerView: 3,
-      },
-    },
   });
 });
 document

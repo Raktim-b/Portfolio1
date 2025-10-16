@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio- Blog</title>
+
+    <!-- Aos Css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Font Awsome CDN -->
     <link
       rel="stylesheet"
@@ -12,8 +15,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- Aos Css -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -28,7 +29,7 @@
     <!-- Header Section -->
     <header class="hdr-sec" id="hdr-part">
       <nav class="navbar navbar-expand-lg">
-        <div class="container">
+        <div class="container nav-container">
           <div class="navbar-logo">
             <a class="navbar-brand" href="index.html"
               ><img src="./Assets/Logo.png" alt=""
@@ -47,24 +48,31 @@
           </button>
           <div class="offcanvas offcanvas-end" id="navbarNavDropdown">
             <button
-              class="offcanvas-header me-auto"
+              class="offcanvas-header mx-auto"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             >
               <i class="fa-solid fa-xmark"></i>
             </button>
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a
-                  class="nav-link nav-hover active text-white"
+                  class="nav-link nav-hover text-white"
                   aria-current="page"
-                  href="index.html"
+                  href="./index.html"
                   >Home</a
                 >
               </li>
 
               <li class="nav-item">
-                <a class="nav-link nav-hover text-white active-nav" href="#"
+                <a class="nav-link nav-hover text-white" href="#project"
+                  >Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-hover active-nav text-white"
+                  href="blog.html"
                   >Blog</a
                 >
               </li>
@@ -81,36 +89,49 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item insta" href="#"
+                    <a
+                      class="dropdown-item insta"
+                      href="https://www.instagram.com/_rexxar._/"
+                      target="_blank"
                       ><i class="fa-brands fa-instagram"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="dropdown-item linkedin" href="#"
+                    <a
+                      class="dropdown-item linkedin"
+                      href="https://www.linkedin.com/in/raktim-bhattacharya-50b871273/
+"
+                      target="_blank"
                       ><i class="fa-brands fa-square-linkedin"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="dropdown-item github" href="#"
+                    <a
+                      class="dropdown-item github"
+                      href="https://github.com/Raktim-b"
+                      target="_blank"
                       ><i class="fa-brands fa-github"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="dropdown-item facebook" href="#"
+                    <a
+                      class="dropdown-item facebook"
+                      href="https://www.facebook.com/raktim.bhattachariya.1/"
+                      target="_blank"
                       ><i class="fa-brands fa-facebook"></i
                     ></a>
                   </li>
                 </ul>
               </li>
             </ul>
-            <div class="navbar-btn ms-3">
+            <div class="navbar-btn">
               <a
                 href="./Assets/Raktim_resume.pdf"
                 class="btn-primary text-white border-0"
                 download="Raktim_resume.pdf"
-              >
-                Download CV <i class="fa-solid fa-download"></i>
-              </a>
+                aria-level="Raktim_resume.pdf"
+                ><span>Downlaod CV <i class="bi bi-download"></i></span
+              ></a>
             </div>
           </div>
         </div>
@@ -153,7 +174,9 @@
                     layouts that work across all devices. Learn practical tips
                     and best practices I use in my projects...
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -172,7 +195,9 @@
                     features and optimization methods I use to build efficient,
                     and interactive projects.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -191,7 +216,9 @@
                     properties to create beautiful, responsive layouts that work
                     across all devices.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -210,7 +237,9 @@
                     Bootstrap 5. Learn components, grid system, and best
                     practices step by step.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -229,7 +258,9 @@
                     From Web Components to Progressive Web Apps, learn what's
                     next.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -248,7 +279,9 @@
                     frontend developer. Learn how to stand out and advance in
                     the industry.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -267,7 +300,9 @@
                     Learn how to handle API calls, manage promises, and write
                     cleaner async code.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -286,7 +321,9 @@
                     merging, pull requests, and collaboration workflows step by
                     step.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -305,7 +342,9 @@
                     images, implement lazy loading, and enhance overall user
                     experience through performance.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -324,7 +363,9 @@
                     projects to include, how to present them, and tips to land
                     your dream job.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -343,7 +384,9 @@
                     and delete elements. Build interactive web pages with
                     vanilla JavaScript.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -361,7 +404,9 @@
                     framework that speeds up development. Build modern,
                     responsive designs without writing custom CSS from scratch.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -380,7 +425,9 @@
                     keyframes, transitions, transforms, and animation best
                     practices.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -399,7 +446,9 @@
                     what recruiters look for and how to showcase your technical
                     skills confidently.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
             </div>
@@ -458,22 +507,34 @@
               <div class="ftr-list-hdr fw-bold mb-3">Social Links</div>
               <ul class="list-unstyled d-flex">
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://www.instagram.com/_rexxar._/"
+                    target="_blank"
                     ><i class="fa-brands fa-instagram"></i
                   ></a>
                 </li>
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://www.linkedin.com/in/raktim-bhattacharya-50b871273/"
+                    target="_blank"
                     ><i class="fa-brands fa-square-linkedin"></i
                   ></a>
                 </li>
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/Raktim-b"
+                    target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/raktim.bhattachariya.1/"
+                    target="_blank"
                     ><i class="fa-brands fa-facebook"></i
                   ></a>
                 </li>

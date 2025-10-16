@@ -38,7 +38,7 @@
     <!-- Header Section -->
     <header class="hdr-sec" id="hdr-part">
       <nav class="navbar navbar-expand-lg">
-        <div class="container">
+        <div class="container nav-container">
           <div class="navbar-logo">
             <a class="navbar-brand" href="index.html"
               ><img src="./Assets/Logo.png" alt=""
@@ -57,13 +57,13 @@
           </button>
           <div class="offcanvas offcanvas-end" id="navbarNavDropdown">
             <button
-              class="offcanvas-header me-auto"
+              class="offcanvas-header mx-auto"
               data-bs-dismiss="offcanvas"
               aria-label="Close"
             >
               <i class="fa-solid fa-xmark"></i>
             </button>
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
                 <a
                   class="nav-link nav-hover active-nav text-white"
@@ -100,35 +100,48 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item insta" href="#"
+                    <a
+                      class="dropdown-item insta"
+                      href="https://www.instagram.com/_rexxar._/"
+                      target="_blank"
                       ><i class="fa-brands fa-instagram"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="dropdown-item linkedin" href="#"
+                    <a
+                      class="dropdown-item linkedin"
+                      href="https://www.linkedin.com/in/raktim-bhattacharya-50b871273/
+"
+                      target="_blank"
                       ><i class="fa-brands fa-square-linkedin"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="dropdown-item github" href="#"
+                    <a
+                      class="dropdown-item github"
+                      href="https://github.com/Raktim-b"
+                      target="_blank"
                       ><i class="fa-brands fa-github"></i
                     ></a>
                   </li>
                   <li>
-                    <a class="dropdown-item facebook" href="#"
+                    <a
+                      class="dropdown-item facebook"
+                      href="https://www.facebook.com/raktim.bhattachariya.1/"
+                      target="_blank"
                       ><i class="fa-brands fa-facebook"></i
                     ></a>
                   </li>
                 </ul>
               </li>
             </ul>
-            <div class="navbar-btn ms-3">
+            <div class="navbar-btn">
               <a
                 href="./Assets/Raktim_resume.pdf"
                 class="btn-primary text-white border-0"
                 download="Raktim_resume.pdf"
                 aria-level="Raktim_resume.pdf"
-                >Downlaod CV <i class="bi bi-download"></i
+                ><span>Downlaod CV <i class="bi bi-download"></i></span
               ></a>
             </div>
           </div>
@@ -144,9 +157,9 @@
               <div class="banner-cntn">
                 <div class="line1 fw-semibold">Hi, I am</div>
                 <h1 class="line2 fw-semibold">Raktim Bhattacharya</h1>
-                <div class="h1 title1 text-white fw-bold">
-                  Frontend <span>Developer</span>
-                </div>
+                <h1 class="title1 text-white fw-bold mb-4">
+                  Frontend <span>Developer.</span>
+                </h1>
                 <p>
                   Passionate Front-End Developer crafting responsive,
                   user-friendly, and visually engaging web experiences. I
@@ -156,19 +169,24 @@
                 </p>
                 <div class="banner-btn">
                   <a href="" class="btn-primary text-white border-0"
-                    >Hire Me
+                    ><span
+                      >See My Work <i class="fa-solid fa-paper-plane"></i
+                    ></span>
                   </a>
                 </div>
               </div>
             </div>
             <div class="col-12 col-xl-5">
-              <div class="img-bg">
-                <figure class="banner-img">
-                  <img src="./Assets/Banner-img.png" alt="" />
-                </figure>
-              </div>
+              <figure class="banner-img">
+                <img src="./Assets/Banner-img.png" alt="" />
+              </figure>
+
               <div class="social-buttons">
-                <a href="#" class="social-button github2">
+                <a
+                  href="https://github.com/Raktim-b"
+                  target="_blank"
+                  class="social-button github2"
+                >
                   <svg
                     class="cf-icon-svg"
                     xmlns="http://www.w3.org/2000/svg"
@@ -179,7 +197,11 @@
                     ></path>
                   </svg>
                 </a>
-                <a href="#" class="social-button linkedin2">
+                <a
+                  href="https://www.linkedin.com/in/raktim-bhattacharya-50b871273/"
+                  target="_blank"
+                  class="social-button linkedin2"
+                >
                   <svg
                     viewBox="0 -2 44 44"
                     version="1.1"
@@ -196,7 +218,11 @@
                     </g>
                   </svg>
                 </a>
-                <a href="#" class="social-button facebook2">
+                <a
+                  href="https://www.facebook.com/raktim.bhattachariya.1/"
+                  target="_blank"
+                  class="social-button facebook2"
+                >
                   <svg
                     version="1.1"
                     id="Layer_1"
@@ -217,7 +243,11 @@
                     </g>
                   </svg>
                 </a>
-                <a href="#" class="social-button instagram2">
+                <a
+                  href="https://www.instagram.com/_rexxar._/"
+                  target="_blank"
+                  class="social-button instagram2"
+                >
                   <svg
                     width="800px"
                     height="800px"
@@ -254,17 +284,28 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-12 col-xl-5">
-              <div class="img-bg" data-aos="fade-right" data-aos-duration="500">
-                <figure class="about-img">
+              <div class="about-left">
+                <h2
+                  class="title2 fw-semibold text-white mb-5"
+                  data-aos="fade-right"
+                >
+                  About Me
+                </h2>
+                <figure
+                  class="about-img"
+                  data-aos="fade-right"
+                  data-aos-duration="500"
+                >
                   <img src="./Assets/About-img.png" alt="" />
                 </figure>
               </div>
             </div>
             <div class="col-12 col-xl-7">
               <div class="about-cntn">
-                <h2 class="title2 fw-semibold text-white" data-aos="fade-left">
-                  About Me
-                </h2>
+                <div class="item-count" data-aos="fade-right">
+                  <div class="item-line"></div>
+                  <span>01</span>
+                </div>
                 <p
                   class="text-white"
                   data-aos="fade-left"
@@ -322,9 +363,15 @@
       <!-- Service Section -->
       <section class="service-sec">
         <div class="container">
-          <div class="service-hdr" data-aos="zoom-in">
-            <h2 class="title2 text-white fw-semibold">Services</h2>
-            <p class="text-white">
+          <div class="service-hdr">
+            <h2 class="title2 text-white fw-semibold" data-aos="fade-up">
+              Services
+            </h2>
+            <div class="item-count" data-aos="fade-right">
+              <div class="item-line"></div>
+              <span>02</span>
+            </div>
+            <p class="text-white" data-aos="fade-up">
               I provide frontend development services including responsive web
               design, clean UI development, and interactive features using HTML,
               CSS, JavaScript, Bootstrap, and Tailwind CSS. My goal is to create
@@ -336,9 +383,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-right"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img
@@ -357,9 +404,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img
@@ -378,9 +425,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img
@@ -399,9 +446,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-left"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img
@@ -424,9 +471,15 @@
       <!-- Other Skills Section-->
       <section class="other-skill-sec">
         <div class="container">
-          <div class="other-skill-hdr" data-aos="zoom-in">
-            <h2 class="title2 text-white fw-semibold">Other Skills</h2>
-            <p class="text-white">
+          <div class="other-skill-hdr">
+            <h2 class="title2 text-white fw-semibold" data-aos="fade-up">
+              Other Skills
+            </h2>
+            <div class="item-count" data-aos="fade-right">
+              <div class="item-line"></div>
+              <span>03</span>
+            </div>
+            <p class="text-white" data-aos="fade-up">
               Alongside frontend development, I also have a background in core
               programming and databases. With experience in C, Java, Python, and
               MySQL, I can approach problems logically, write efficient code,
@@ -438,9 +491,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-right"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img src="./Assets/C-programming.png" />
@@ -456,9 +509,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img src="./Assets/Java.png" />
@@ -474,9 +527,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-up"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img
@@ -495,9 +548,9 @@
               <div class="col-12 col-sm-6 col-xl-3">
                 <div
                   class="card"
-                  data-aos="flip-right"
+                  data-aos="fade-left"
                   data-aos-easing="linear"
-                  data-aos-duration="500"
+                  data-aos-duration="1000"
                 >
                   <div class="card-icon">
                     <img src="./Assets/SQL.png" />
@@ -517,9 +570,15 @@
       <!-- Project Section -->
       <section class="project-sec" id="project">
         <div class="container">
-          <div class="project-hdr" data-aos="zoom-in">
-            <h2 class="title2 text-white fw-semibold">My Projects</h2>
-            <p class="text-white">
+          <div class="project-hdr">
+            <h2 class="title2 text-white fw-semibold" data-aos="fade-up">
+              My Projects
+            </h2>
+            <div class="item-count" data-aos="fade-right">
+              <div class="item-line"></div>
+              <span>04</span>
+            </div>
+            <p class="text-white" data-aos="fade-up">
               My projects showcase websites built with HTML, CSS, JavaScript,
               and Bootstrap. They highlight responsive layouts, clean UI, and
               smooth interactions. Each project reflects my focus on modern
@@ -545,15 +604,22 @@
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">Fashion</h4>
-                      <p>
-                        Shop.Co Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
-                      <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                      <p>Shop.Co Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
+                      <a
+                        href="https://raktim-b.github.io/ShopCo/"
+                        target="_blank"
+                        class="btn-primary"
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -564,15 +630,22 @@
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">e-Commerce</h4>
-                      <p>
-                        Cabinetmark LLC Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
-                      <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                      <p>Cabinetmark LLC Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
+                      <a
+                        href="https://raktim-b.github.io/CabinetMarklLLC/"
+                        target="_blank"
+                        class="btn-primary"
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -583,15 +656,22 @@
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">Medical</h4>
-                      <p>
-                        Lung+Allergy Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
-                      <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                      <p>Lung+Allergy Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
+                      <a
+                        href="https://raktim-b.github.io/Lung-Allergy/"
+                        target="_blank"
+                        class="btn-primary"
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -602,87 +682,117 @@
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">Business</h4>
-                      <p>
-                        Miro Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
+                      <p>Miro Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
                       <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="prjct-cntn"
-                    data-aos="fade-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="500"
-                  >
+                  <div class="prjct-cntn">
                     <figure class="prjct-img">
                       <img src="./Assets/Fashion2.jpg" alt="" />
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">Fashion</h4>
-                      <p>
-                        NorthStar Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
-                      <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                      <p>NorthStar Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
+                      <a
+                        href="https://raktim-b.github.io/NothStar/index.html"
+                        target="_blank"
+                        class="btn-primary"
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="prjct-cntn"
-                    data-aos="fade-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="800"
-                  >
+                  <div class="prjct-cntn">
+                    <figure class="prjct-img">
+                      <img src="./Assets/Business4.jpg" alt="" />
+                    </figure>
+                    <div class="prjct-desc">
+                      <h4 class="title4">Business</h4>
+                      <p>NFTX Landing Page Design Using: <br /></p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
+                      <a
+                        href="https://raktim-b.github.io/NFTX/"
+                        target="_blank"
+                        class="btn-primary"
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="prjct-cntn">
                     <figure class="prjct-img">
                       <img src="./Assets/e-Commarse2.jpg" alt="" />
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">e-Commerce</h4>
-                      <p>
-                        Furniture Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
+                      <p>Furniture Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
                       <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div
-                    class="prjct-cntn"
-                    data-aos="fade-left"
-                    data-aos-easing="linear"
-                    data-aos-duration="1100"
-                  >
+                  <div class="prjct-cntn">
                     <figure class="prjct-img">
                       <img src="./Assets/Business1.jpg" alt="" />
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">Business</h4>
-                      <p>
-                        Everetts Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
+                      <p>Everetts Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
                       <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -693,15 +803,19 @@
                     </figure>
                     <div class="prjct-desc">
                       <h4 class="title4">Business</h4>
-                      <p>
-                        Nex cent Landing Page Design Using:
-                        <span class="used-skill">
-                          HTML, CSS, Bootstrap, JQuery</span
-                        >
-                      </p>
+                      <p>Nex cent Landing Page Design Using:</p>
+                      <ul class="used-skills list-unstyled d-flex">
+                        <li><img src="./Assets/Html.png" alt="" /></li>
+                        <li><img src="./Assets/Css.png" alt="" /></li>
+                        <li><img src="./Assets/JS.png" alt="" /></li>
+                        <li><img src="./Assets/Bootstrap.png" alt="" /></li>
+                        <li><img src="./Assets/Jquery.png" alt="" /></li>
+                      </ul>
                       <a href="#hdr-part" class="btn-primary"
-                        >View Project <i class="bi bi-box-arrow-up-right"></i
-                      ></a>
+                        ><span
+                          >View Project <i class="fa-solid fa-paper-plane"></i
+                        ></span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -720,9 +834,13 @@
       <!-- Blog Section -->
       <section class="blog-sec">
         <div class="container">
-          <div class="blog-hdr text-center" data-aos="zoom-in">
-            <h2 class="title2 text-white">My Blog</h2>
-            <p class="text-white">
+          <div class="blog-hdr text-center">
+            <h2 class="title2 text-white" data-aos="fade-up">My Blog</h2>
+            <div class="item-count" data-aos="fade-right">
+              <div class="item-line"></div>
+              <span>05</span>
+            </div>
+            <p class="text-white" data-aos="fade-up">
               Insights, tutorials, and thoughts on web development, design
               trends, and my journey as a frontend developer
             </p>
@@ -745,7 +863,9 @@
                     layouts that work across all devices. Learn practical tips
                     and best practices I use in my projects...
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
               <div class="col-12 col-lg-6">
@@ -762,14 +882,16 @@
                     Discover essential JavaScript techniques that will make your
                     code cleaner, more efficient, and easier to maintain.
                   </p>
-                  <a href="#" class="btn-primary">Read Full Article</a>
+                  <a href="#" class="btn-primary"
+                    ><span>Read Full Article</span></a
+                  >
                 </div>
               </div>
             </div>
             <div class="blog-btn text-center my-4">
               <a href="blog.html" class="btn-primary"
-                >Veiw More <i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
+                ><span>Veiw More <i class="fa-solid fa-paper-plane"></i></span>
+              </a>
             </div>
           </div>
         </div>
@@ -795,6 +917,10 @@
               </div>
             </div>
             <div class="col-12 col-md-6">
+              <div class="item-count" data-aos="fade-right">
+                <div class="item-line"></div>
+                <span>06</span>
+              </div>
               <div
                 class="accordion"
                 id="accordionPanelsStayOpenExample"
@@ -960,10 +1086,16 @@
       </section>
       <!-- Together Section -->
       <section class="tog-sec">
-        <div class="container tog-container">
-          <div class="tog-hdr mb-5" data-aos="zoom-in">
-            <h2 class="title2 text-white fw-semibold">Lets Design Together</h2>
-            <p class="text-white">
+        <div class="container">
+          <div class="tog-hdr mb-5">
+            <h2 class="title2 text-white fw-semibold" data-aos="fade-up">
+              Lets Design Together
+            </h2>
+            <div class="item-count" data-aos="fade-right">
+              <div class="item-line"></div>
+              <span>07</span>
+            </div>
+            <p class="text-white" data-aos="fade-up">
               I collaborate with clients to craft modern, responsive, and
               user-friendly websites that bring ideas to life and deliver real
               impact
@@ -1018,7 +1150,7 @@
           </form>
         </div>
       </section>
-      <button id="backToTop" class="back-to-top-fixed">
+      <button id="backToTop" class="back-to-top-fixed text-black fw-bolder">
         <i class="fa-solid fa-angle-up"></i>
       </button>
     </main>
@@ -1065,22 +1197,34 @@
               <div class="ftr-list-hdr fw-bold mb-3">Social Links</div>
               <ul class="list-unstyled d-flex">
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://www.instagram.com/_rexxar._/"
+                    target="_blank"
                     ><i class="fa-brands fa-instagram"></i
                   ></a>
                 </li>
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://www.linkedin.com/in/raktim-bhattacharya-50b871273/"
+                    target="_blank"
                     ><i class="fa-brands fa-square-linkedin"></i
                   ></a>
                 </li>
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://github.com/Raktim-b"
+                    target="_blank"
                     ><i class="fa-brands fa-github"></i
                   ></a>
                 </li>
                 <li class="text-white">
-                  <a class="dropdown-item" href="#"
+                  <a
+                    class="dropdown-item"
+                    href="https://www.facebook.com/raktim.bhattachariya.1/"
+                    target="_blank"
                     ><i class="fa-brands fa-facebook"></i
                   ></a>
                 </li>
