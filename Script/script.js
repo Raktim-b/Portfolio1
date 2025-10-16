@@ -3,6 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
   // Initialize AOS
   AOS.init();
   const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    
+    loop: true,
     centeredSlides: true,
     autoplay: {
       delay: 1500,
@@ -16,9 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
       el: ".swiper-pagination",
       clickable: true,
     },
-    slidesPerView: 1,
-
-    loop: true,
     // freeMode: true,
     breakpoints: {
       // when window width is >= 576px
@@ -26,9 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 2,
         // spaceBetween: 30,
       },
+      992: {
+        slidesPerView: 3,
+        // spaceBetween: 30,
+      },
       // when window width is >= 992px
       1200: {
-        slidesPerView: 3,
+        slidesPerView: 4,
       },
     },
   });
