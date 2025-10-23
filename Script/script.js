@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     slidesPerView: 1,
     spaceBetween: 30,
     freeMode: true,
-    
+
     loop: true,
     centeredSlides: true,
     autoplay: {
@@ -38,7 +38,26 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+  const cursor = document.querySelector(".cursor");
+  let mouseX = 0;
+  let mouseY = 0;
+  let clientX = 0;
+  let clientY = 0;
+  document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+  });
+  function MouseMove() {
+    clientX += (mouseX - clientX) * 1;
+    clientY += (mouseY - clientY) * 1;
 
+    cursor.style.top = clientY + "px";
+    cursor.style.left = clientX + "px";
+
+    requestAnimationFrame(MouseMove);
+  }
+  MouseMove();
+  
   const filterBtns = document.querySelectorAll(".fltr-btn");
   const slides = document.querySelectorAll(".swiper-slide");
 

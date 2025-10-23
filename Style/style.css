@@ -16,14 +16,33 @@ html {
   font-family: "Poppins", sans-serif !important;
   background-color: var(--primary-color);
   scroll-behavior: smooth;
+  cursor: none;
 }
 a {
   display: inline-block;
   text-decoration: none;
+  cursor: none !important;
 }
+
 .container {
   max-width: 1340px;
 }
+.cursor {
+  height: 18px;
+  width: 18px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform: rotate(325deg);
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  position: fixed;
+  z-index: 9999;
+}
+
 .btn-primary {
   /* background-color: var(--secondary-color);  */
   padding: 18px 24px;
@@ -1003,6 +1022,11 @@ nav {
   .item-count {
     margin-block: 0 20px;
   }
+  /* Header Section */
+  .navbar-nav{
+    margin-left: 30px;
+    padding: 20px 16px;
+  }
   /* Banner Section */
   .banner-row {
     flex-direction: column-reverse;
@@ -1042,6 +1066,16 @@ nav {
   /* Service Section */
 }
 @media screen and (max-width: 992px) {
+  html,
+  body {
+    cursor: default;
+  }
+  .cursor {
+    display: none;
+  }
+  a {
+    cursor: pointer !important;
+  }
   .btn-primary {
     margin-left: 0 !important;
   }
@@ -1058,7 +1092,7 @@ nav {
     transform: translateX(0);
     background: none;
     border: none;
-    margin-block: 30px 0;
+    margin: 30px auto 0;
   }
   .m-auto {
     margin: 80px auto 20px !important;
@@ -1251,7 +1285,7 @@ nav {
   }
   /* Header Section */
   .navbar-brand {
-    width: 150px;
+    width: 190px;
   }
   /* Banner Section */
   .banner-sec {
