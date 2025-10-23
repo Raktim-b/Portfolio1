@@ -769,6 +769,12 @@ nav {
   font-size: 14px;
   padding: 10px 20px;
 }
+
+.swiper-pagination-bullet {
+  .swiper-pagination-clickable & {
+    cursor: none;
+  }
+}
 /* Blog Section */
 .blog-sec {
   padding: 10px 0 20px;
@@ -1023,7 +1029,7 @@ nav {
     margin-block: 0 20px;
   }
   /* Header Section */
-  .navbar-nav{
+  .navbar-nav {
     margin-left: 30px;
     padding: 20px 16px;
   }
