@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
+  // For cursor
   const cursor = document.querySelector(".cursor");
   let mouseX = 0;
   let mouseY = 0;
@@ -48,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
     mouseY = e.clientY;
   });
   function MouseMove() {
-    clientX += (mouseX - clientX) * 1;
-    clientY += (mouseY - clientY) * 1;
+    clientX += (mouseX - clientX) * 0.05;
+    clientY += (mouseY - clientY) * 0.05;
 
     cursor.style.top = clientY + "px";
     cursor.style.left = clientX + "px";
