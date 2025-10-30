@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     requestAnimationFrame(MouseMove);
   }
   MouseMove();
-  
+
   const filterBtns = document.querySelectorAll(".fltr-btn");
   const slides = document.querySelectorAll(".swiper-slide");
 
@@ -187,6 +187,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+function initTilt() {
+  const tiltElements = document.querySelectorAll("[data-tilt]");
+
+  if (window.innerWidth > 768) {
+    tiltElements.forEach((el) => {
+      if (!el.vanillaTilt) {
+        VanillaTilt.init(el, {
+          max: 15,
+          speed: 400,
+          glare: true,
+          "max-glare": 0.3,
+          gyroscope: false, // prevents phone motion effect
+        });
+      }
+    });
+  } else {
+    tiltElements.forEach((el) => {
+      if (el.vanillaTilt) {
+        el.vanillaTilt.destroy();
+      }
+    });
+  }
+}
+
+initTilt();
+window.addEventListener("resize", initTilt);
+
 document
   .querySelector(".input-form")
   .addEventListener("submit", async function (e) {
