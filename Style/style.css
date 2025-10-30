@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #0c1018;
-  --footer-bg: #1d1f20;
+  --footer-bg: #151f30;
   --secondary-color: #08d665;
   --tertiary-color: #fff;
   --hover-color: #01ff73;
@@ -800,8 +800,7 @@ nav {
 .blog-card {
   max-width: 650px;
   padding: 25px;
-  background: #0d1407;
-  border: 4px solid #202020;
+  background: #ffffff0d;
   border-radius: 15px;
   margin: 30px auto;
   transition: all 0.3s ease;
@@ -1034,9 +1033,7 @@ nav {
   .title1 {
     max-width: 100%;
   }
-  .item-count {
-    margin-block: 0 20px;
-  }
+
   /* Banner Section */
   .banner-row {
     flex-direction: column-reverse;
@@ -1469,7 +1466,7 @@ nav {
     font-size: 2rem;
   }
 }
-@media screen and(max-width:400px) {
+@media screen and (max-width: 400px) {
   .title2 {
     top: -15px;
     font-size: 47px;

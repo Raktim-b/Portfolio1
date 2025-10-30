@@ -15,6 +15,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- FontShare CDN -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,1&f[]=clash-grotesk@200,300,400,500,600,700,1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,700,800,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -30,7 +39,7 @@
     <!-- Header Section -->
     <header class="hdr-sec" id="hdr-part">
       <nav class="navbar navbar-expand-lg">
-        <div class="container nav-container">
+        <div class="container">
           <div class="navbar-logo">
             <a class="navbar-brand" href="index.html"
               ><img src="./Assets/Logo.png" alt=""
@@ -60,20 +69,24 @@
                 <a
                   class="nav-link nav-hover text-white"
                   aria-current="page"
-                  href="./index.html"
+                  href="index.html"
                   >Home</a
                 >
               </li>
-
+              <li class="nav-item">
+                <a
+                  class="nav-link nav-hover active-nav text-white"
+                  href="#about"
+                  >About Me</a
+                >
+              </li>
               <li class="nav-item">
                 <a class="nav-link nav-hover text-white" href="#project"
                   >Projects</a
                 >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link nav-hover active-nav text-white"
-                  href="blog.html"
+                <a class="nav-link nav-hover text-white" href="blog.html"
                   >Blog</a
                 >
               </li>
@@ -143,7 +156,12 @@
       <section class="blog-sec">
         <div class="container">
           <div class="blog-hdr text-center">
-            <h2 class="title2 text-white">My Blog</h2>
+            <div class="blog-hdr text-center">
+              <div class="section-heading text-center" data-aos="zoom-in">
+                <h4 class="title4">Blog</h4>
+                <h2 class="title2">Blog</h2>
+              </div>
+            </div>
             <p class="text-white">
               Insights, tutorials, and thoughts on web development, design
               trends, and my journey as a frontend developer
@@ -472,7 +490,7 @@
           <div class="col-12 col-sm-6 col-lg-4">
             <figure class="ftr-logo">
               <a href="index.html"
-                ><img src="./Assets/Footer-logo.png" alt=""
+                ><img src="./Assets/Ftr-Logo.png" alt=""
               /></a>
             </figure>
           </div>
@@ -558,6 +576,8 @@
     ></script>
     <!-- Aos Js -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom secondary JS -->
+    <script src="./Script/aboutScript.js"></script>
     <!-- Custom Js -->
     <script src="./Script/script.js"></script>
   </body>
