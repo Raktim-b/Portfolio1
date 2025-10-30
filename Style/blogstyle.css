@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
-  --primary-color: #0c1018;
+  --primary-color: #0d0d0d;
   --footer-bg: #151f30;
   --secondary-color: #08d665;
-  --tertiary-color: #fff;
+  --tertiary-color: #ffffff80;
   --hover-color: #01ff73;
   --Card-bg: #f9fafb;
   --text-color: #28293e;
@@ -29,9 +29,9 @@ h4,
 h5 {
   font-family: "Clash Grotesk", sans-serif !important;
 }
-.container {
+/* .container {
   max-width: 1400px;
-}
+} */
 .cursor {
   mix-blend-mode: difference;
   height: 18px;
@@ -51,6 +51,27 @@ h5 {
   position: fixed;
   z-index: 9999;
 }
+.page-wrpr {
+  position: relative;
+}
+.page-wrpr::before {
+  content: "";
+  position: absolute;
+  left: 3%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #36363659;
+}
+.page-wrpr::after {
+  content: "";
+  position: absolute;
+  right: 3%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background: #36363659;
+}
 .btn-primary {
   /* background-color: var(--secondary-color);  */
   padding: 18px 24px;
@@ -58,6 +79,9 @@ h5 {
   border-radius: 5px;
   position: relative;
   transition: all 0.3s linear;
+  box-shadow: rgba(8, 214, 101, 0.3) 0px 8px 40px 0px,
+    rgba(255, 255, 255, 0) 0px 0px 10px 1px inset,
+    rgba(8, 214, 101, 0.2) 0px 0px 0px 1px;
   overflow: hidden;
   z-index: 1;
 }
@@ -151,9 +175,12 @@ nav {
   object-fit: cover;
 }
 .navbar-nav {
-  background: linear-gradient(90deg, #171717 0%, #0a101e 100%);
-  border: 4px solid #2f2e2e;
-  border-radius: 20px;
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.03);
+  opacity: 1;
+  border-radius: 80px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 24px 0px,
+    rgba(255, 255, 255, 0.04) 0px -8px 24px 0px;
   padding: 20px;
   margin: 0 auto;
   position: fixed;
@@ -189,7 +216,7 @@ nav {
   position: absolute;
   left: 0;
   right: 0;
-  top: 194%;
+  top: 181%;
   transition: 0.7s;
 }
 .nav-hover.active-nav::after {
@@ -310,10 +337,15 @@ nav {
 /* Blog Sec */
 .blog-sec {
   padding: 90px 0 50px;
+  border: 1px solid #36363659;
 }
 .blog-hdr {
   font-size: 18px;
   margin-bottom: 30px;
+}
+.blog-hdr > p {
+  color: var(--tertiary-color) !important;
+  font-size: 18px;
 }
 .blog-btn {
   margin-right: 12px;
@@ -340,7 +372,9 @@ nav {
 .blog-card {
   max-width: 650px;
   padding: 25px;
-  background: #ffffff0d;
+  background-color: #0000000a;
+  border-radius: 16px;
+  border: 1px solid #ffffff0d;
   border-radius: 15px;
   margin: 30px auto;
   transition: all 0.3s ease;
@@ -375,6 +409,7 @@ nav {
 .blog-card > p {
   height: 110px;
   font-size: 18px;
+  color: var(--tertiary-color) !important;
 }
 /* Back to Top buttin */
 .back-to-top-fixed {
@@ -412,7 +447,7 @@ nav {
 }
 /* Footer Section */
 .ftr-sec {
-  background-color: var(--footer-bg);
+  border: 1px solid #36363659;
   padding: 50px 0;
 }
 .ftr-logo {
@@ -592,7 +627,7 @@ nav {
     font-size: 2rem;
   }
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   .title2 {
     top: -15px;
     font-size: 47px;
