@@ -125,7 +125,7 @@ h5 {
 
 .title4 {
   display: inline-block;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--secondary-color);
@@ -317,7 +317,7 @@ nav {
   /* background: url(../Assets/banner-bg.jpg) no-repeat center/cover; */
   display: flex;
   align-items: center;
-  padding: 60px 0 130px;
+  padding: 60px 0130px;
   background-attachment: fixed;
 }
 
@@ -588,7 +588,6 @@ nav {
 /* Service Section */
 .service-sec {
   padding: 70px 0;
-  border: 1px solid rgba(184, 184, 184, 0.1);
 }
 .service-hdr {
   text-align: center;
@@ -628,7 +627,6 @@ nav {
 /* Other Skill Section */
 .other-skill-sec {
   padding: 60px 0 30px;
-  border: 1px solid rgba(184, 184, 184, 0.1);
 }
 .other-skill-hdr {
   text-align: center;
@@ -646,7 +644,6 @@ nav {
 /* Project Section */
 .project-sec {
   padding: 100px 0 20px;
-  border: 1px solid rgba(102, 102, 102, 0.1);
 }
 .project-hdr {
   text-align: center;
@@ -794,7 +791,6 @@ nav {
 /* Blog Section */
 .blog-sec {
   padding: 50px 0 20px;
-  border: 1px solid rgba(184, 184, 184, 0.1);
 }
 
 .blog-hdr {
@@ -843,7 +839,6 @@ nav {
 /* Q&A Section */
 .qna-sec {
   padding: 60px 0;
-  border: 1px solid rgba(102, 102, 102, 0.1);
 }
 .qna-row {
   align-items: center;
@@ -1290,17 +1285,18 @@ nav {
     font-size: 12px;
   }
   .title1 {
-    font-size: 30px;
+    font-size: 34px;
   }
   .section-heading {
     margin-bottom: 50px;
   }
   .title2 {
-    top: -15px;
-    font-size: 47px;
+    top: -20px;
+    font-size: 60px;
+    mask-image: linear-gradient(180deg, #0000, #000 5%, #000 95%, #0000);
   }
   .title4 {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .item-line {
@@ -1342,7 +1338,7 @@ nav {
     }
     45%,
     55% {
-      width: 12em;
+      width: 10.9em;
     }
     90%,
     100% {
@@ -1365,7 +1361,7 @@ nav {
     font-size: 12px;
   }
   .card {
-    height: 280px;
+    height: 260px;
   }
   .card > p {
     font-size: 12px;
@@ -1473,5 +1469,12 @@ nav {
   }
   .scl-list > ul > li > a {
     font-size: 2rem;
+  }
+}
+@media screen and(max-width:400px) {
+  .title2 {
+    top: -15px;
+    font-size: 47px;
+    mask-image: linear-gradient(180deg, #0000, #000 5%, #000 95%, #0000);
   }
 }
