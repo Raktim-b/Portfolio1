@@ -940,7 +940,12 @@ nav {
   color: var(--tertiary-color);
 }
 .accordion-button:not(.collapsed) {
-  color: var(--tertiary-color);
+  background-color: #7dedaf !important;
+  color: var(--primary-color) !important;
+  font-weight: 500;
+}
+.accordion-button:not(.collapsed) > .plus-wrpr {
+  color: var(--tertiary-color) !important;
 }
 .accordion-button:not(.collapsed) > .fa-square-caret-down {
   transform: rotatex(180deg);
