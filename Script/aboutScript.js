@@ -20,3 +20,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   MouseMove();
 });
+window.onload = function () {
+  const loader = document.getElementById("loader-wrapper");
+  const content = document.getElementById("page-wrpr");
+
+  // Keep loader for at least 3 seconds
+  setTimeout(() => {
+    loader.classList.add("fade-out");
+
+    setTimeout(() => {
+      loader.style.display = "none";
+      content.classList.remove("hidden");
+      content.classList.add("show");
+    }, 500); // wait for fade-out transition
+  }, 3000);
+};
