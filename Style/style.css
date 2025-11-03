@@ -787,8 +787,8 @@ nav {
   animation-play-state: paused;
 }
 .auto-scroll-itms {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   /* margin-right: 155.21px; */
   position: absolute;
   animation: rightTOLeft 12s linear infinite;
@@ -836,6 +836,8 @@ nav {
 }
 .auto-scroll2 {
   padding-block: 40px;
+  display: flex;
+  align-items: center;
   margin-top: 90px;
   background-color: var(--secondary-color);
   position: relative;
@@ -854,8 +856,8 @@ nav {
   animation-play-state: paused;
 }
 .auto-scroll-itms2 {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   /* margin-right: 155.21px; */
   position: absolute;
   animation: leftTORight 10s linear infinite;
