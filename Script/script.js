@@ -2,6 +2,11 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Initialize AOS
   AOS.init();
+  luxy.init({
+    wrapper: "#luxy",
+    targets: ".luxy-el",
+    wrapperSpeed: 0.08,
+  });
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
