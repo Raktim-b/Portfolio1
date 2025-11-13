@@ -1,5 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   // For cursor
+  luxy.init({
+    wrapper: "#luxy",
+    targets: ".luxy-el",
+    wrapperSpeed: 0.08,
+  });
   const cursor = document.querySelector(".cursor");
   let mouseX = 0;
   let mouseY = 0;
