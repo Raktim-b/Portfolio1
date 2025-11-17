@@ -5,18 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiper = new Swiper(".swiper", {
     slidesPerView: 1,
     spaceBetween: 30,
-    freeMode: true,
-
     loop: true,
-    centeredSlides: true,
+    speed: 3000,
     autoplay: {
-      delay: 1500,
+      delay: 0,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
       disableOnInteraction: false,
     },
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev",
-    // },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -28,16 +23,24 @@ document.addEventListener("DOMContentLoaded", function () {
         slidesPerView: 2,
         // spaceBetween: 30,
       },
-      992: {
-        slidesPerView: 3,
-        // spaceBetween: 30,
-      },
-      // when window width is >= 992px
-      1200: {
-        slidesPerView: 4,
-      },
     },
   });
+  // For NavBar
+  let lastScroll = 0;
+  const nav = document.querySelector(".navbar-nav");
+
+  window.addEventListener("scroll", () => {
+    let currentScroll = window.pageYOffset;
+
+    if (currentScroll > lastScroll) {
+      nav.classList.add("hide-nav");
+    } else {
+      nav.classList.remove("hide-nav");
+    }
+
+    lastScroll = currentScroll;
+  });
+
   // For cursor
   const cursor = document.querySelector(".cursor");
   let mouseX = 0;
@@ -59,50 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   MouseMove();
 
-  const filterBtns = document.querySelectorAll(".fltr-btn");
-  const slides = document.querySelectorAll(".swiper-slide");
-
-  function removeActiveClass(btn) {
-    btn.classList.remove("active");
-  }
-
-  function handleFilterClick() {
-    // Remove active class from all filter buttons
-    filterBtns.forEach(removeActiveClass);
-    this.classList.add("active");
-
-    // Get selected filter value
-    const filterValue = this.textContent.trim().toLowerCase();
-
-    // Loop through all slides
-    slides.forEach((slide) => {
-      const projectCategory = slide
-        .querySelector(".title4")
-        .textContent.trim()
-        .toLowerCase();
-
-      // Show or hide slide
-      if (filterValue === "all" || projectCategory === filterValue) {
-        slide.style.display = "block"; // show
-      } else {
-        slide.style.display = "none"; // hide
-      }
-    });
-
-    // Refresh Swiper layout after filtering
-    swiper.update();
-  }
-
-  // Add event listeners to buttons
-  filterBtns.forEach((btn) => {
-    btn.addEventListener("click", handleFilterClick);
-  });
-
-  // Get all filter buttons and project items
-
-  // Refresh AOS to remove animation delays
-
-  // Filter for blog page
   const buttons = document.querySelectorAll(".blog-btn");
   const blogCards = document.querySelectorAll(".blog-card");
 

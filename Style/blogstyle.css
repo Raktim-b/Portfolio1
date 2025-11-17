@@ -291,8 +291,6 @@ h5 {
 /* Nav-bar Section */
 .hdr-sec {
   padding: 15px 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(../Assets/Banner-bg.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 .nav-container {
@@ -473,8 +471,6 @@ nav {
 .blog-sec {
   padding: 90px 0 50px;
   border: 1px solid #36363659;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url(../Assets/Banner-bg.png) no-repeat center/cover;
   background-attachment: fixed;
 }
 .blog-hdr {
