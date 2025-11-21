@@ -926,29 +926,7 @@ nav {
 .project-wrpr {
   margin-block: 50px;
 }
-.filter-btn-container {
-  text-align: center;
-  margin-block: 20px 80px;
-}
-.fltr-btn {
-  margin-right: 12px;
-  padding: 10px 20px;
-  border-radius: 12px;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  transition: all 0.3s ease-in-out;
-}
-.fltr-btn:hover {
-  background-color: #b3b1b1;
-}
-.fltr-btn.active {
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-}
-.fltr-btn.active:hover {
-  background-color: var(--hover-color);
-}
+
 .swiper {
   width: 100%;
   mask-image: linear-gradient(
